@@ -58,4 +58,16 @@ This was because each Python list had to be broadcasted into a Numpy array. If w
 
 ![alt-text](https://github.com/edwisdom/python-prof/blob/master/means2.png)
 
+## Function Calls
+
+I had a number of functions that could've probably been combined together, if not for my desire to avoid hours debugging monstrously unmodular code. Before I decided to go gung-ho with the clean abstractions, I wanted to know exactly how expensive function calls were in Python. 
+
+![alt-text](https://github.com/edwisdom/python-prof/blob/master/function_calls.png)
+
+Turns out, it's about 10 microseconds added per level of indirection. This also explains why certain functional tools, like reduce, are discouraged in Python.
+
+## More to Come...
+
+As I learn more in my time profiling Python code, I will add more sections here. 
+
 
