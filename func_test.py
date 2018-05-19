@@ -33,4 +33,4 @@ def plot_func_times(funcs, iters):
 	plt.legend(loc='upper right')
 
 plot_func_times(funcs, iters)
-plt.show()
+plt.savefig("function_calls.png", bbox_inches='tight')

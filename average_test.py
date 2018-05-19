@@ -28,7 +28,7 @@ plt.figure()
 plt.plot(lengths, py_times, 'bo', label='Native Python average')
 plt.plot(lengths, np_times, 'g-', label='Numpy mean')
 plt.legend(loc='upper left')
-plt.show()
+plt.savefig("average_prof.png", bbox_inches='tight')
 
 
 
